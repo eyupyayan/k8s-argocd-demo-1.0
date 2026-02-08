@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: REPO_URL
-    targetRevision: main
+    repoURL: https://github.com/eyupyayan/k8s-argocd-demo-1.0.git
+    targetRevision: master
     path: k8s/overlays/dev
   destination:
     server: https://kubernetes.default.svc

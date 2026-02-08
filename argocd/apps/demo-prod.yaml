@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: REPO_URL
-    targetRevision: main
+    repoURL: https://github.com/eyupyayan/k8s-argocd-demo-1.0.git
+    targetRevision: master
     path: k8s/overlays/prod
   destination:
     server: https://kubernetes.default.svc
-    namespace: dev
+    namespace: prod
   syncPolicy:
     automated:
       prune: true
